@@ -13,7 +13,7 @@ const buttonVariants = cva(
             variant: {
                 redBorder: "border-2 not-disabled:border-[#dc241f]",
                 red: "bg-[#ca140b]! hover:not-disabled:bg-[#e73128]! active:not-disabled:bg-[#a9130b]! text-white active:not-disabled:text-[#e2aaa9]! border-none",
-                green: "bg-[#6d9636]! hover:not-disabled:bg-[#6e9735]! active:not-disabled:bg-[#5f822a]! text-white active:not-disabled:text-[#c6d8ad]! border-none",
+                green: "bg-[#6d9636]! hover:not-disabled:bg-[#85b445]! active:not-disabled:bg-[#5f822a]! text-white active:not-disabled:text-[#c6d8ad]! border-none",
                 greenBorder: "border-2 not-disabled:border-[#6e9735]"
             },
         },
