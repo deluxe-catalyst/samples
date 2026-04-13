@@ -1,0 +1,50 @@
+.container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  background: #fafafa;
+}
+
+.floatLeft {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  shape-outside: margin-box;
+  cursor: grab;
+  user-select: none;
+}
+
+.floatRight {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  shape-outside: margin-box;
+  cursor: grab;
+  user-select: none;
+}
+
+.image {
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  pointer-events: none; /* чтобы drag работал по всей области */
+}
+
+.text {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  color: #1a1a1a;
+  text-align: justify;
+}
+
+.text h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #000;
+}
+
+.text p {
+  margin-bottom: 1.2rem;
+}

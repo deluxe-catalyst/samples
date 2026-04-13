@@ -1,26 +1,42 @@
 @import "tailwindcss";
 
+@theme {
+  --color-surface-100: oklch(0.9851 0 0);
+  --color-secondary-100: oklch(0.3211 0 0);
+  --color-secondary-200: oklch(0.8297 0 0);
+
+  --color-primary-100: oklch(0.9782 0.0557 101.88);
+  --color-primary-150: oklch(0.9036 0.1023 101.51);
+  --color-primary-200: oklch(0.5009 0.141 324.92);
+
+  --color-gradient-up: oklch(0.6251 0.1797 289.43);
+  --color-grtadient-down: oklch(0.4997 0.217 281.81);
+
+  --color-button: oklch(0.5278 0.0932 254.6);
+  --color-button-hover: oklch(0.5757 0.088 249.09);
+  --color-button-active: oklch(0.4867 0.0853 255.14);
+
+  --color-button-text: oklch(0.9088 0.0035 247.86);
+  --color-button-text-hover: oklch(0.9911 0 0);
+  --color-button-text-active: oklch(0.8012 0.0227 256.75);
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.width-limiter {
+  width: clamp(20rem, 80vw, 100rem);
+  margin-inline: auto;
+
+  @media (max-width: 768px) {
+    width: clamp(10rem, 92vw, 80rem);
+  }
 }

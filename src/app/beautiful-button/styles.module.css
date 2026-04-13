@@ -1,0 +1,50 @@
+.btn {
+    position: relative;
+    box-shadow:
+        inset 0px 4px 8px 0px rgba(255, 255, 255, 0.2),
+        inset 0px 1px 1px 0px rgba(255, 255, 255, 0.3),
+        inset 0px -1px 1px 0px rgba(255, 255, 255, 0.1),
+        0px 1px 4px 1px rgba(0, 0, 0, 0.5),
+        inset 0px -3px 10px 1px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    color: var(--color-button-text);
+    border-radius: 99rem;
+    padding: 0.5rem 2.5rem;
+    transition: background 0.2s, color 0.2s, transform 0.05s linear;
+    background: var(--color-surface-button);
+    border: none;
+    isolation: isolate;
+    overflow: hidden;
+    font-weight: 600;
+
+    &:hover {
+        color: var(--color-button-text-hover);
+        background: var(--color-button-hover);
+    }
+
+    &:active {
+        transform: translateY(1px);
+        color: var(--color-button-text-active);
+        background: var(--color-button-active);
+        box-shadow:
+
+            0px 1px 0.5px 0px rgba(255, 255, 255, 0.4),
+            inset 0 1px 2px rgb(30, 57, 89),
+            inset 0px 4px 14px 1px rgba(0, 0, 0, 0.5),
+            inset 0px -4px 10px 0px rgba(255, 255, 255, 0.05),
+            inset 0px -1px 2px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image: repeating-radial-gradient(circle at 30% 30%, rgba(0, 0, 0, 0.2) 0%, transparent 2px);
+        background-size: 2px 2px;
+        opacity: 0.3;
+        mix-blend-mode: overlay;
+        pointer-events: none;
+        border-radius: inherit;
+        z-index: 1;
+    }
+}
