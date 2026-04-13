@@ -25,10 +25,13 @@ export default function Page() {
                     whileDrag={{ scale: 1.02, cursor: "grabbing" }}
                     className={styles.floatLeft}
                 >
-                    <img
+                    <Image
                         src="/assets/text-image-1.webp"
                         alt="Draggable 1"
+                        width={300}
+                        height={300}
                         className={styles.image}
+                        style={{ aspectRatio: '1/1' }}
                     />
                 </motion.div>
                 <p>
@@ -42,10 +45,13 @@ export default function Page() {
                     whileDrag={{ scale: 1.02, cursor: "grabbing" }}
                     className={styles.floatRight}
                 >
-                    <img
+                    <Image
                         src="/assets/text-image-2.webp"
                         alt="Draggable 2"
+                        width={300}
+                        height={150}
                         className={styles.image}
+                        style={{ aspectRatio: '1/1' }}
                     />
                 </motion.div>
                 <p>
