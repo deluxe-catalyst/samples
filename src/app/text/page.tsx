@@ -29,7 +29,7 @@ export default function Page() {
                         src="/assets/text-image-1.webp"
                         alt="Draggable 1"
                         width={300}
-                        height={150}
+                        height={300}
                         className={styles.image}
                     />
                 </motion.div>
