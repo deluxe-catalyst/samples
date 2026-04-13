@@ -9,27 +9,34 @@
 
 .floatLeft {
   float: left;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  shape-outside: margin-box;
+  margin: 0 1.5rem 1rem 0;
+  position: relative;
+  z-index: 10;
   cursor: grab;
-  user-select: none;
+
 }
 
 .floatRight {
   float: right;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  shape-outside: margin-box;
+  margin: 0 0 1rem 1.5rem;
+  position: relative;
+  z-index: 10;
   cursor: grab;
-  user-select: none;
+}
+
+.floatLeft,
+.floatRight {
+  &:active {
+    cursor: grabbing;
+  }
 }
 
 .image {
   display: block;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  pointer-events: none; /* чтобы drag работал по всей области */
+  pointer-events: none;
+  max-width: 30rem;
 }
 
 .text {
