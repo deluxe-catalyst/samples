@@ -7,6 +7,7 @@ const buttonVariants = cva(
         rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 
         focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border border-[#c3c3c3]
         bg-[#ebebeb] hover:not-disabled:bg-[#f4f4f4] active:not-disabled:bg-[#e1e1e1] active:not-disabled:text-[#696969]
+        disabled:*:text-[#696969]
     `,
     {
         variants: {
